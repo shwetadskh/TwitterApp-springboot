@@ -13,6 +13,15 @@
 <body>
 <div class="container">
     <div th:replace="fragments/navbar"></div>
+    <ul class="nav nav-tabs">
+        <li role="presentation" th:classappend="${filter == 'all' ? 'active' : '' }">
+            <a href="/users">All</a></li>
+        <li role="presentation" th:classappend="${filter == 'followers' ? 'active' : '' }">
+            <a href="/users?filter=followers">Followers</a></li>
+        <li role="presentation" th:classappend="${filter == 'following' ? 'active' : '' }">
+            <a href="/users?filter=following">Following</a></li>
+    </ul><br/>
+
     <div class="jumbotron col-md-8 col-md-offset-2">
         <h2>New Tweet</h2><br/>
         <form th:action="@{/tweets}" th:object="${tweet}" method="post" autocomplete="off">

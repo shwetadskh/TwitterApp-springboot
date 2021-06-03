@@ -1,0 +1,34 @@
+a.username {
+    color: #00aced
+}
+
+a.tag {
+    color: #0084b4
+}
+
+
+body{
+     background : #17A2B8 url(/images/tweeter-image.jpg);
+     background-size: cover;
+     background-repeat: no repeat;
+}
+
+.tweet{
+color: white;
+}
+
+.welcome{
+color: White;
+}
+
+.users{
+color: White;
+}
+
+.signup{
+color: White;
+}
+
+.tagTweet{
+color: White;
+}
